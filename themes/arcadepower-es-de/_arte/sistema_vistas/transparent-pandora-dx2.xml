@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+	  <logoSize>0.2 0.32</logoSize>
+	  <maxLogoCount>3</maxLogoCount>
+	  <logoScale>1.5</logoScale>
+	  <color>FAFAFF00</color>
+      <colorEnd>FAFAFF00</colorEnd>
+      <systemInfoDelay>300</systemInfoDelay>
+      <zIndex>20</zIndex>
+      <pos>0 0.075</pos>
+      <size>1 0.5</size>
+      <origin>0 0</origin>
+    </carousel>
+
+    <video name="staticBackgroundVideo">
+      <path>./_arte/bgv-sistemas/demo_en.mp4</path>
+    </video>
+
+    <text name="systemInfo">
+      <pos>0.34 0.88</pos>
+      <size>0.24 0.05</size>
+      <backgroundColor>000000</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <fontSize>0.038</fontSize>
+	  <fontPath>./_arte/fuentes/BigSquareDots.ttf</fontPath>
+	  <!-- <reflexion>0.17 0.0</reflexion> -->
+    </text>
+
+    <image name="Consolas_efecto" extra="true">
+      <path>./../consoles/default.png</path>
+      <path>./../consoles/${system.theme}.png</path>
+      <linearSmooth>true</linearSmooth>
+      <size>0.28 0.3</size>
+	  <pos>0.351 0.76</pos>
+	  <origin>0 0</origin>
+      <color>FFFFFFFF</color>
+      <zIndex>22</zIndex>
+    <storyboard>
+        <animation property="y" from="0" to="0.68" duration="1350" mode="easeOut"/>
+        <animation property="opacity" from="0.3" to="1" duration="2700" mode="easeIn" repeat="forever"/>
+        <animation property="scale" from="0" to="1" duration="750" mode="easeOut"/>
+    <animation property="y" from="0.68" to="0.6" duration="5750" mode="linearSmooth"/>
+      </storyboard>
+    </image>
+
+    <image name="raPanelPandora" extra="true" if="{global:cheevos} == true">
+      <path>./_arte/button_filled.png</path>
+      <pos>0.72 0.70</pos>
+      <size>0.26 0.22</size>
+      <origin>0 0</origin>
+      <color>07070ED0</color>
+      <zIndex>28</zIndex>
+    </image>
+
+    <image name="raIconPandora" extra="true" if="{global:cheevos} == true">
+      <path>./../imgs/arcade/auto-retroachievements.png</path>
+      <pos>0.85 0.72</pos>
+      <size>0.12 0.12</size>
+      <origin>0.50 0</origin>
+      <color>FFFFFFFF</color>
+      <zIndex>30</zIndex>
+    </image>
+
+    <text name="raTitlePandora" if="{global:cheevos} == true">
+      <pos>0.85 0.845</pos>
+      <origin>0.50 0.50</origin>
+      <fontPath>./_arte/fuentes/BigSquareDots.ttf</fontPath>
+      <fontSize>0.020</fontSize>
+      <color>FFFFFFFF</color>
+      <glowColor>00000088</glowColor>
+      <glowSize>2</glowSize>
+      <horizontalAlignment>center</horizontalAlignment>
+      <text>RETROACHIEVEMENTS</text>
+      <zIndex>31</zIndex>
+    </text>
+
+    <text name="raUserPandora" if="{global:cheevos} == true">
+      <pos>0.85 0.89</pos>
+      <origin>0.50 0.50</origin>
+      <fontPath>./_arte/fuentes/BigSquareDots.ttf</fontPath>
+      <fontSize>0.031</fontSize>
+      <color>f6c945ff</color>
+      <glowColor>FFFFFF66</glowColor>
+      <glowSize>2</glowSize>
+      <horizontalAlignment>center</horizontalAlignment>
+      <text>${global.cheevos.username}</text>
+      <zIndex>32</zIndex>
+    </text>
+  </view>
+
+</theme>

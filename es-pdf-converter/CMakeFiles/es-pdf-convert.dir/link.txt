@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++20 -O2 -DNDEBUG -Wall -Wpedantic -Wsign-compare -Wnarrowing -Wmissing-field-initializers -Wunused-macros  -O2 -s "CMakeFiles/es-pdf-convert.dir/src/main.cpp.o" "CMakeFiles/es-pdf-convert.dir/src/ConvertPDF.cpp.o" -o ../es-pdf-convert  /usr/lib/x86_64-linux-gnu/libpoppler-cpp.so 

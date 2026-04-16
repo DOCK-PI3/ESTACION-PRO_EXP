@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+	  <logoSize>0.2 0.32</logoSize>
+	  <maxLogoCount>3</maxLogoCount>
+	  <logoScale>1.5</logoScale>
+	  <color>FAFAFF00</color>
+      <colorEnd>FAFAFF00</colorEnd>
+      <systemInfoDelay>300</systemInfoDelay>
+      <zIndex>20</zIndex>
+      <pos>0 0.085</pos>
+      <size>1 0.5</size>
+      <origin>0 0</origin>
+    </carousel>
+
+    <video name="staticBackgroundVideo">
+      <path>./_arte/bgv-sistemas/bkgd_anim.mp4</path>
+    </video>
+
+    <text name="systemInfo">
+      <pos>0.34 0.88</pos>
+      <size>0.24 0.05</size>
+      <backgroundColor>000000</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <fontSize>0.038</fontSize>
+	  <fontPath>./_arte/fuentes/BigSquareDots.ttf</fontPath>
+	  <!-- <reflexion>0.17 0.0</reflexion> -->
+    </text>
+
+    <image name="Consolas_efecto" extra="true">
+      <path>./../consoles/default.png</path>
+      <path>./../consoles/${system.theme}.png</path>
+      <linearSmooth>true</linearSmooth>
+      <size>0.28 0.3</size>
+	  <pos>0.255 0.56</pos>
+	  <origin>0 0</origin>
+      <color>FFFFFFFF</color>
+      <zIndex>22</zIndex>
+      <storyboard>
+        <animation property="opacity" from="1" to="0.5" duration="850" mode="easeIn" autoReverse="true" repeat="forever"/>
+        <animation property="scale" from="1" to="1.005" duration="850" mode="bump" repeat="forever"/>
+      </storyboard>
+    </image>
+  </view>
+</theme>

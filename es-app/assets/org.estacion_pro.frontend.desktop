@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Exec=ESTACION-PRO
+Icon=org.estacion_pro.frontend.svg
+Terminal=false
+Type=Application
+StartupNotify=true
+Hidden=false
+Categories=Game;Emulator;
+Name=ESTACION-PRO
+GenericName=Gaming Frontend
+Keywords=emulator;emulation;front-end;frontend;

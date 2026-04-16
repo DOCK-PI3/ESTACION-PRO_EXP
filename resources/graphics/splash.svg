@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="1280px"
+   height="720px"
+   viewBox="0 0 1280 720"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#0d0d0d"/>
+
+  <!-- Decorative red accent bars -->
+  <rect x="0" y="0" width="1280" height="6" fill="#c90012"/>
+  <rect x="0" y="714" width="1280" height="6" fill="#c90012"/>
+
+  <!-- Center logo card -->
+  <rect x="340" y="200" width="600" height="320" rx="24" ry="24" fill="#1a1a1a"/>
+  <rect x="340" y="200" width="600" height="320" rx="24" ry="24"
+        fill="none" stroke="#c90012" stroke-width="2"/>
+  <rect x="340" y="200" width="600" height="6" rx="3" ry="3" fill="#c90012"/>
+
+  <!-- Main title -->
+  <text
+     x="640"
+     y="355"
+     font-family="Ubuntu, DejaVu Sans, Arial, sans-serif"
+     font-weight="700"
+     font-size="82"
+     fill="#ffffff"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     letter-spacing="-2">ESTACION-PRO</text>
+
+  <!-- Subtitle -->
+  <text
+     x="640"
+     y="440"
+     font-family="Ubuntu, DejaVu Sans, Arial, sans-serif"
+     font-weight="400"
+     font-size="28"
+     fill="#c90012"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     letter-spacing="6">FRONTEND</text>
+
+  <!-- Loading -->
+  <text
+     x="640"
+     y="670"
+     font-family="Ubuntu, DejaVu Sans, Arial, sans-serif"
+     font-weight="400"
+     font-size="18"
+     fill="#555555"
+     text-anchor="middle"
+     dominant-baseline="middle">Loading...</text>
+
+</svg>
